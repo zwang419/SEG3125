@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+	<! IMPORTANT to use a CSS file - external >
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Covid-19 Vaccine Survey</title>
+  </head>
+  
+  <body>
+                <body background="images/moroccan-flower.png">
+	
+	<h1>Covid-19 Survey</h1>
+	<form id="myform" action="index.php" >
+
+	
+      
+	<h3>Which <a href="https://www.ottawapublichealth.ca/en/public-health-topics/covid-19-vaccine.aspx">Vaccine</a>(s) you will choose?</h3>
+	
+   	<a href = "https://www.ottawapublichealth.ca/en/public-health-topics/covid-19-vaccine.aspx"><img src = "images/vaccine.jpg">
+   	</a>  
+     
+	<br>
+		
+	<div class="question">
+
+                 	<h2> Personal Information </h2>
+		<p>First name: <input type="text" name="firstname"></p
+		<p>Last name: <input type="text" name="lastname"></p>
+		
+		<h2> What is your sex?</h2>
+		<input type="radio" name="sex" value="male">Male<br>
+                                <input type="radio" name="sex" value="female">Female
+
+		<h2> Which vaccine(s) you prefer? </h2>
+	
+		I preder:<br>
+		<input type="checkbox" name="Vaccine=Pfizer">Pfizer<br>
+		<input type="checkbox" name="Vaccine=Moderna">Moderna<br>
+		<input type="checkbox" name="Vaccine=AstraZeneca">AstraZeneca<br>
+		
+		
+                 	<h2>What is age range?</h2>
+		<select id="favorite">
+			<option value="12 to 18" selected="selected">12 to 18</option>
+			<option value="18 to 50">18 to 50</option>
+			<option value="Above 50">Above 50</option>
+		</select>
+     <br>
+     <br> 
+      <h2>Comments:<h2>
+		<textarea rows="5" cols="30"></textarea>
+	</div>
+
+			
+	<br>
+	<br>
+			
+	<button id="submitButton" type="button" class="block">
+		SUBMIT YOUR SURVEY
+	</button>
+		
+	<p id="signature">Site created by Gavin Wang</p>	
+	
+	</form>
+  </body>
+</html> 
